@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reg-frm/static/css/main.ef03a8a9.css",
+    "main.js": "/reg-frm/static/js/main.e1cada69.js",
+    "index.html": "/reg-frm/index.html",
+    "main.ef03a8a9.css.map": "/reg-frm/static/css/main.ef03a8a9.css.map",
+    "main.e1cada69.js.map": "/reg-frm/static/js/main.e1cada69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef03a8a9.css",
+    "static/js/main.e1cada69.js"
+  ]
+}
