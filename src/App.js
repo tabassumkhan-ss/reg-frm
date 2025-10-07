@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { WalletProvider } from "./WalletContext";
+import MobilePage from "./pages/MobilePage";
+import AadhaarPage from "./pages/AadhaarPage";
+import ProfileFormPage from "./pages/ProfileFormPage";
+import PanCardPage from "./pages/PanCardPage";
+import ProfilePage from "./pages/ProfilePage";
+import AdminLoginPage from "./pages/AdminLoginPage";
+import AdminUsersPage from "./pages/AdminUsersPage";
+import AdminEditUserPage from "./pages/AdminEditUserPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WalletProvider>
+      <Routes>
+        <Route path="/" element={<MobilePage />} />
+        <Route path="/aadhaar" element={<AadhaarPage />} />
+        <Route path="/profile-form" element={<ProfileFormPage />} />
+        <Route path="/pancard" element={<PanCardPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/admin-login" element={<AdminLoginPage />} />
+        <Route path="/admin-users" element={<AdminUsersPage />} />
+        <Route path="/admin-edit/:id" element={<AdminEditUserPage />} />
+      </Routes>
+    </WalletProvider>
   );
 }
 

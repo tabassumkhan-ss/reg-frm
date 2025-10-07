@@ -1,0 +1,74 @@
+/* Glass Card Container */
+.form-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.85); /* brighter glass */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Heading */
+.form-card h2 {
+  text-align: center;
+  color: #222; /* dark heading text */
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-card label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.form-card input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff; /* solid background */
+  color: #000; /* dark text */
+  font-size: 0.95rem;
+}
+
+/* Placeholders */
+.form-card input::placeholder {
+  color: #666;
+}
+
+/* Buttons */
+.form-card button {
+  padding: 0.7rem 1rem;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-card button:hover {
+  background: #357ab8;
+}
+
+/* OTP boxes if you use them */
+.otp-inputs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.otp-inputs input {
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
